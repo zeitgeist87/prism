@@ -75,7 +75,7 @@ Prism.hooks.add('complete', function (env) {
 		}
 	}
 
-	env.element.innerHTML = prompt.outerHTML + env.element.innerHTML;
+	env.element.innerHTML = prompt.outerHTML + '<span class="command-line-code">' + env.element.innerHTML + '</span>';
 });
 
 }());

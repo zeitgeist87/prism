@@ -1,7 +1,7 @@
 .command-line-prompt {
 	border-right: 1px solid #999;
-	display: block;
-	float: left;
+	display: inline-block;
+	white-space: pre;
 	font-size: 100%;
 	letter-spacing: -1px;
 	margin-right: 1em;
@@ -30,4 +30,14 @@
 
 .command-line-prompt > span[data-prompt]:before {
 	content: attr(data-prompt);
+}
+
+.command-line-code {
+	display: inline-block;
+	white-space: pre;
+	background: inherit;
+}
+
+pre.command-line > code {
+	white-space: nowrap;
 }
